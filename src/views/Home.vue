@@ -38,17 +38,17 @@
       roomName: "",
       listItems: [
         {
-          id: "VueRooms-Sports",
+          id: "vRooms-Sports",
           text: "Sports",
           icon: "mdi-football",
         },
         {
-          id: "VueRooms-Development",
+          id: "vRooms-Development",
           text: "Development",
           icon: "mdi-code-not-equal-variant",
         },
         {
-          id: "VueRooms-Meet",
+          id: "vRooms-Meet",
           text: "Meet friends",
           icon: "mdi-account-group",
         },
@@ -59,7 +59,7 @@
         this.$router.push({ name: "room", params: { id: id, title: title } });
       },
       handleCreate() {
-        let id = "VueRooms-" + this.roomName;
+        let id = "vRooms-" + this.roomName;
         let text = this.roomName;
         this.route(id, text);
       },
