@@ -12,7 +12,7 @@
         </v-col>
       </v-row>
       <p class="mt-4 text--disabled">
-        Because we're using the free Jitsi-API, you might see ads after ending the call.
+        Because we're using the free Jitsi-API, loading might take a while, and you might see ads after ending the call.
       </p>
     </v-container>
   </v-app>
