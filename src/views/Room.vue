@@ -11,7 +11,9 @@
           <div id="meet"></div>
         </v-col>
       </v-row>
-      <p class="mt-4 text--disabled">Because we're using the free Jitsi-API, you might see ads after ending the call.</p>
+      <p class="mt-4 text--disabled">
+        Because we're using the free Jitsi-API, you might see ads after ending the call.
+      </p>
     </v-container>
   </v-app>
 </template>
@@ -19,6 +21,9 @@
 <script>
   export default {
     name: "Room",
+    metaInfo: {
+      title: "Meeting",
+    },
     mounted() {
       const JitsiMeetExternalAPI = window.JitsiMeetExternalAPI;
       const domain = "meet.jit.si";
