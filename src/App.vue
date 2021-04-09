@@ -1,7 +1,7 @@
 <template>
   <v-app id="app">
     <header>
-      <h1 class="pt-8 mb-2">VueRooms</h1>
+      <h1 class="pt-8 mb-2">vRooms</h1>
       <div id="nav" class="pb-4">
         <router-link to="/">Rooms</router-link> |
         <router-link to="/description">Description</router-link>
