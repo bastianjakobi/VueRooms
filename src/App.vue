@@ -23,7 +23,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
+    color: #000000;
     min-height: 100vh;
   }
 
@@ -33,7 +33,7 @@
       color: white;
 
       &.router-link-exact-active {
-        color: #42b983;
+        color: #00ff8c;
       }
     }
   }

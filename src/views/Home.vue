@@ -4,7 +4,12 @@
       <h2 class="mb-2">Use one of our rooms</h2>
       <v-list>
         <v-list-item-group>
-          <v-list-item v-for="(item, i) in listItems" :key="i" @click="route(item.id, item.text)">
+          <v-list-item
+            v-for="(item, i) in listItems"
+            :key="i"
+            @click="route(item.id, item.text)"
+            :aria-label="item.text"
+          >
             <v-list-item-icon>
               <v-icon v-text="item.icon"></v-icon>
             </v-list-item-icon>
