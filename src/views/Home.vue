@@ -8,7 +8,6 @@
             v-for="(item, i) in listItems"
             :key="i"
             @click="route(item.id, item.text)"
-            :aria-label="item.text"
           >
             <v-list-item-icon>
               <v-icon v-text="item.icon"></v-icon>
@@ -22,7 +21,7 @@
       <h2 class="mt-14 mb-2">Or create your own</h2>
       <v-form>
         <v-text-field required label="Enter a channel name" v-model="roomName"></v-text-field>
-        <v-btn color="success" @click="handleCreate()">Create room</v-btn>
+        <v-btn color="primary" @click="handleCreate()">Create room</v-btn>
       </v-form>
     </v-container>
   </v-app>
