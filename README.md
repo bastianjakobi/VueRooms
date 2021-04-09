@@ -1,4 +1,5 @@
-# roomz
+# VueRooms
+VueRooms is a room based video chat application made with Vue.js, Vuetify and the Jitsi IFrame API.
 
 ## Project setup
 ```
