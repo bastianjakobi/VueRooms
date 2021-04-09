@@ -1,12 +1,12 @@
 <template>
   <v-app id="app">
     <header>
-        <h1 class="pt-8 mb-2">VueRooms</h1>
-        <div id="nav" class="pb-4">
-          <router-link to="/">Rooms</router-link> |
-          <router-link to="/description">Description</router-link>
-        </div>
-      </header>
+      <h1 class="pt-8 mb-2">VueRooms</h1>
+      <div id="nav" class="pb-4">
+        <router-link to="/">Rooms</router-link> |
+        <router-link to="/description">Description</router-link>
+      </div>
+    </header>
     <v-container>
       <router-view />
     </v-container>
@@ -14,10 +14,11 @@
 </template>
 
 <style lang="scss">
-  *{
+  * {
     margin: 0;
     padding: 0;
-  } #app {
+  }
+  #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -47,5 +48,10 @@
 <script>
   export default {
     name: "App",
+    metaInfo: {
+      title: "Home",
+      titleTemplate: "%s | VueRooms",
+      meta: [{ name: "viewport", content: "width=device-width, initial-scale=1" }],
+    },
   };
 </script>
