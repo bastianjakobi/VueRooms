@@ -8,8 +8,6 @@
             v-for="(item, i) in listItems"
             :key="i"
             @click="route(item.id, item.text)"
-            role="none"
-            aria-label="Open {{item.text}} room"
           >
             <v-list-item-icon>
               <v-icon v-text="item.icon"></v-icon>
