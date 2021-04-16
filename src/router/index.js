@@ -1,10 +1,11 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Room from "../views/Room.vue";
-import About from "../views/About.vue"
 
 Vue.use(VueRouter);
+function lazyLoad(view) {
+  return()=>import(`@/views/${view}.vue`)
+}
 
 const routes = [
   {
@@ -15,13 +16,13 @@ const routes = [
   {
     path: "/room/:id",
     name: "room",
-    component: Room,
+    component: lazyLoad("Room"),
     props: true,
   },
   {
     path: "/description",
     name: "description",
-    component: About,
+    component: lazyLoad("About"),
   }
 ];
 
