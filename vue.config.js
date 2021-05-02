@@ -3,7 +3,6 @@ module.exports = {
   pwa: {
     name: "vRooms",
     themeColor: "#2c3e50",
-    appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'black-translucent',
   }
 };
